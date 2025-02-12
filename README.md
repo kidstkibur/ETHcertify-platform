@@ -55,3 +55,12 @@ deploy.js → Script to deploy smart contracts to Ethereum testnet.
 
 🤝 Team Members
 
+Dawit
+
+Netsanet 
+
+Natnael
+
+Kidist
+
+

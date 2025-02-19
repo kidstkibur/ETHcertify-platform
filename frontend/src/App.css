@@ -47,11 +47,12 @@
 
 /* Header Container */
 .header {
-  background-color: #09090A; /* Background Color */
+  background-color: #09090A;
   padding: 1.8rem 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  line-height: 2.8;
 }
 
 .container {
@@ -59,12 +60,12 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1200px; /* Adjust as needed */
+  max-width: 1200px;
 }
 
 /* Logo */
 .logo img {
-  height: 40px; /* Adjust size as needed */
+  height: 40px;
 }
 
 /* Navigation */
@@ -76,13 +77,13 @@
 .nav-list {
   list-style: none;
   display: flex;
-  gap: 2.5rem;
+  gap: 3.5rem;
 }
 
 .nav-item .nav-link {
   text-decoration: none;
   color: #5B2B64; /* Navigation Link Color */
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 600;
   transition: color 0.3s ease;
 }
@@ -103,7 +104,7 @@
     height: 35px;
   }
 }
-
+/*Header Style Ended*/
 
 /* Home Container */
 .home-container {
@@ -111,6 +112,7 @@
   background-color: #09090A; /* Background Color */
   color: white;
   padding: 5% 7%;
+  padding-bottom: 7%;
   justify-content: space-between;
   align-items: center;
 }
@@ -122,7 +124,7 @@
 
 /* Header Text with Gradient */
 .gradient-text {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
   margin-bottom: 2rem;
 }
@@ -137,48 +139,45 @@
 
 /* Description Paragraph */
 .description {
-  font-size: 1rem;
-  line-height: 2;
-  margin-bottom: 2rem;
-  color: #5D94BD; /* Lighter text color */
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  color: whitesmoke; /* Lighter text color #5D94BD */
 }
 
 /* Button Group */
 .button-group {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 /* Gradient Buttons */
 .gradient-button {
-  padding: 1rem 2rem;
+  padding: 1rem 1.7rem;
   font-size: 1rem;
   font-weight: 400;
-  border: none;
-  border-radius: 25px;
+  border: 1px inset;
+  border-radius: 13px;
   cursor: pointer;
   transition: transform 0.3s ease;
   color: white;
   text-transform: uppercase;
 }
 
-.verify-button {
-  background: linear-gradient(90deg, #A83369, #5B2B64);
-}
-
-.issue-button {
-  background: linear-gradient(90deg, #5B2B64, #A83369);
+.verify-button, .issue-button {
+  background: transparent;
 }
 
 .gradient-button:hover {
   transform: scale(1.05);
+  background: linear-gradient(90deg, #A83369, #5B2B64);
 }
 
 /* Image Placeholder */
 .image-placeholder {
   width: 40%; /* Adjust width as needed */
   height: 300px; /* Adjust height as needed */
-  background: url("./assets/image.png") no-repeat center center/cover; /*Replace with your image */
+  background-image: url('./assets/image.png') no-repeat center center/cover; /*Replace with your image */
   border-radius: 15px;
 }
 
@@ -199,3 +198,50 @@
     height: 200px;
   }
 }
+
+/*Why Blockchain Container*/
+.why-blockchain {
+  background-color: #09090A;
+  padding: 5% 7%;
+  color: white;
+}
+
+.header-center {
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.cards {
+  padding: 5% 3%;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+.card {
+  border: 1px inset;
+  border-radius: 15px;
+  padding: 2%;
+  width: 300px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+}
+
+.how-it-works {
+  background-color: #09090A;
+  padding: 5% 7%;
+  color: white;
+}
+
+.how-it-works .card {
+  width: 250px;
+}
+
+
+
+/*Home Style Ended*/

@@ -2,6 +2,7 @@
 
 import React from "react";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import Card from "../components/Card";
 import "../App.css"; // Import CSS for styling
 
@@ -82,6 +83,46 @@ const Home = () => {
                         Once recorded, the information remains unchanged, ensuring trust and reliability."/>
                 </div>
             </div>
+
+            <div className="why-eth">
+                <h1 className="header-center">Why ETHcertify?</h1>
+                <div className="why first">
+                    <div className="content">
+                        <h2>Are you an employer looking for applicants? </h2>
+                        <p>ETHcertify provides a fast and reliable way to verify the authenticity of resumes and 
+                        qualifications. Employers can instantly confirm that candidates certificates, diplomas, 
+                        and academic records are genuine, reducing the risk of hiring fraudulent candidates. </p>
+                    </div>
+
+                    <div className="image-one"></div>
+                </div>
+                <div className="why second">
+                    <div className="content">
+                        <h2>or educational institutions & scholarshop provider? </h2>
+                        <p>ETHcertify provides a fast and reliable way to verify the authenticity of resumes and 
+                        qualifications. Employers can instantly confirm that candidates certificates, diplomas, 
+                        and academic records are genuine, reducing the risk of hiring fraudulent candidates. </p>
+                    </div>
+                    
+                    <div className="image-two"></div>
+                </div>
+                <div className="why third">
+                    <div className="content">
+                        <h2>or Certificate holder? </h2>
+                        <p>ETHcertify provides a fast and reliable way to verify the authenticity of resumes and 
+                        qualifications. Employers can instantly confirm that candidates certificates, diplomas, 
+                        and academic records are genuine, reducing the risk of hiring fraudulent candidates. </p>
+                    </div>
+                    
+                    <div className="image-three"></div>
+                </div>
+            </div>
+
+            <div>
+                <h1> Contact </h1>
+            </div>
+
+            <Footer />
         </div>
     );
 };

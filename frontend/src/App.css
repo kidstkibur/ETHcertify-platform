@@ -242,6 +242,22 @@
   width: 250px;
 }
 
+.why-eth {
+  background-color: #09090A;
+  padding: 5% 7%;
+  color: white;
+}
+
+.why {
+  border: 1px inset;
+  padding: 3%;
+  font-size: 1.1rem;
+}
+
+.why h2 {
+  margin: 2% 0;
+}
+
 
 
 /*Home Style Ended*/

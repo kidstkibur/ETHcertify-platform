@@ -6,7 +6,7 @@ const Header = () => {
     <header className="header">
       <div className="container">
         <div className="logo">
-          <img src="../assets/icon.jpg" alt="ETHcertify Logo" />
+          <img src="../assets/image6.png" alt="ETHcertify Logo" />
         </div>
 
         <nav className="nav">

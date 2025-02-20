@@ -29,24 +29,26 @@ const Home = () => {
                 </div>
 
                 {/* Image Placeholder Section */}
-                <div className="image-placeholder"></div>
+                <div className="image-placeholder">
+                    <img src="/assets/image1.png" alt="" />
+                </div>
             </div>
 
             <div className="why-blockchain">
                 <h1 className="header-center">Why Blockchain? </h1>
                 <div className="cards">
                     <Card 
-                        img="/assets/image.png" 
+                        img="/assets/image8.png" 
                         alt="immutability" 
                         header="Immutability" 
                         para="Leveraging Immutability feature of blockchain" />
                     <Card 
-                        img="/assets/icon.jpg" 
+                        img="/assets/image7.png" 
                         alt="decentralization" 
                         header="Decentralization" 
                         para="Leveraging Immutability feature of blockchain" />
                     <Card 
-                        img="/assets/image.png" 
+                        img="/assets/image3.png" 
                         alt="transparency" 
                         header="Transparency" 
                         para="Leveraging Immutability feature of blockchain" />
@@ -94,17 +96,21 @@ const Home = () => {
                         and academic records are genuine, reducing the risk of hiring fraudulent candidates. </p>
                     </div>
 
-                    <div className="image-one"></div>
+                    <div className="image-one">
+                        <img src="/assets/image2.png" alt="" />
+                    </div>
                 </div>
                 <div className="why second">
+                    <div className="image-two">
+                        <img src="/assets/image1.png" alt="" />
+                    </div>
+                    
                     <div className="content">
                         <h2>or educational institutions & scholarshop provider? </h2>
                         <p>ETHcertify provides a fast and reliable way to verify the authenticity of resumes and 
                         qualifications. Employers can instantly confirm that candidates certificates, diplomas, 
                         and academic records are genuine, reducing the risk of hiring fraudulent candidates. </p>
                     </div>
-                    
-                    <div className="image-two"></div>
                 </div>
                 <div className="why third">
                     <div className="content">
@@ -114,13 +120,15 @@ const Home = () => {
                         and academic records are genuine, reducing the risk of hiring fraudulent candidates. </p>
                     </div>
                     
-                    <div className="image-three"></div>
+                    <div className="image-three">
+                        <img src="/assets/image4.png" alt="" />
+                    </div>
                 </div>
             </div>
 
-            <div>
+            {/*<div>
                 <h1> Contact </h1>
-            </div>
+            </div>*/}
 
             <Footer />
         </div>

@@ -3,20 +3,30 @@ import "../App.css"; // Import CSS for styling
 
 const Footer = () => {
 	return (
-		<footer className="footer">
-			<div className="container">
+		<footer>
+			<div className="footer">
 				<div className="logo">
-					<img src="../assets/icon.jpg" alt="ETHcertify Logo" />
+					<img src="../assets/image6.png" alt="ETHcertify Logo" />
 		        </div>
 
-		        <div>
-		        	<p> Copywrite @ 2025. ETHcertify.</p>
+		        <div className="copywrite">
+		        	<hr/>
+		        	<p> Copywrite &copy; 2025. ETHcertify</p>
+		        	<hr/>
 		        </div>
 
-		        <div className="nav">
-		        	<a href="#">Home</a>
-		        	<a href="#">Privacy</a>
-		        	<a href="#">Terms</a>
+		        <div className="bottom-nav">
+		        	<ul className="bottom-nav-list">
+		        		<li>
+		        			<a href="#">Home</a>
+		        		</li>
+		        		<li>
+		        			<a href="#">Privacy</a>
+		        		</li>
+		        		<li>
+		        			<a href="#">Terms</a>
+		        		</li>
+		        	</ul>
 		        </div>
 			</div>
 		</footer>

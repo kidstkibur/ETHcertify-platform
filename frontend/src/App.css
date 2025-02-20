@@ -48,30 +48,30 @@
 /* Header Container */
 .header {
   background-color: #09090A;
-  padding: 1.8rem 2.5rem;
+  padding: 1rem 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  line-height: 2.8;
+  line-height: 2;
 }
 
 .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+/*  align-items: center;*/
   width: 100%;
   max-width: 1200px;
 }
 
 /* Logo */
 .logo img {
-  height: 40px;
+  height: 130px;
 }
 
 /* Navigation */
 .nav {
+  padding-top: 2%;
   display: flex;
-  align-items: center;
 }
 
 .nav-list {
@@ -111,7 +111,7 @@
   display: flex;
   background-color: #09090A; /* Background Color */
   color: white;
-  padding: 5% 7%;
+  padding: 2% 7%;
   padding-bottom: 7%;
   justify-content: space-between;
   align-items: center;
@@ -176,9 +176,7 @@
 /* Image Placeholder */
 .image-placeholder {
   width: 40%; /* Adjust width as needed */
-  height: 300px; /* Adjust height as needed */
-  background-image: url('./assets/image.png') no-repeat center center/cover; /*Replace with your image */
-  border-radius: 15px;
+  height: 470px; /* Adjust height as needed */
 }
 
 /* Responsive Design */
@@ -227,9 +225,13 @@
   line-height: 1.5;
 }
 
+.why-blockchain .card {
+/*  background: linear-gradient(90deg, #0c8ce9, #7cc4f8);*/
+/*  background-color: #7cc4f8;*/
+}
+
 .card img {
-  width: 200px;
-  height: 200px;
+  width: 100%;
 }
 
 .how-it-works {
@@ -244,20 +246,63 @@
 
 .why-eth {
   background-color: #09090A;
-  padding: 5% 7%;
+  padding: 1% 10%;
   color: white;
 }
 
 .why {
-  border: 1px inset;
-  padding: 3%;
-  font-size: 1.1rem;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.why img {
+  width: 70%;
+  text-align: center;
+}
+
+.why .content {
+  padding: 2%;
+  font-size: 1.3rem;
+  width: 100%;
 }
 
 .why h2 {
-  margin: 2% 0;
+  padding: 4% 0;
 }
 
-
-
 /*Home Style Ended*/
+
+/* Footer Style */
+.footer {
+  background-color: #0F0F2F;
+  padding: 1% 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.copywrite {
+  padding: 2% 6%;
+  width: 40%;
+}
+
+.copywrite hr {
+  margin: 6% 0;
+}
+
+.copywrite p {
+  padding: 0 10%;
+}
+
+.bottom-nav {
+  padding: 2% 3%;
+}
+
+.bottom-nav-list {
+  list-style: none;
+}
+

@@ -201,14 +201,15 @@
   font-size: 3.5rem;
 }
 
+/* Base Card Styles */
 .cards {
   padding: 5% 3%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-content: center;
 }
-
 .card {
+
 /*  border: 1px solid;*/
   border-radius: 15px;
   padding: 2%;
@@ -230,6 +231,7 @@
 
 .card:hover {
   transform: scale(1.05);
+
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
@@ -240,6 +242,28 @@
 .card img {
   width: 100%;
 }
+
+.hover-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  padding: 10px 5px;
+}
+
+.hover-card:hover .hover-content {
+  opacity: 1;
+}
+
 
 .how-it-works {
   background-color: #09090A;
@@ -318,4 +342,5 @@
 .bottom-nav-list {
   list-style: none;
 }
+
 

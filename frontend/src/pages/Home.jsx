@@ -30,14 +30,17 @@ const Home = () => {
 
                 {/* Image Placeholder Section */}
                 <div className="image-placeholder">
+
                     <img src="/assets/image1.png" alt="" />
                 </div>
             </div>
 
+            {/* why blockchain page */}
             <div className="why-blockchain">
                 <h1 className="header-center">Why Blockchain? </h1>
                 <div className="cards">
                     <Card 
+
                         img="/assets/image8.png" 
                         alt="immutability" 
                         header="Immutability" 
@@ -51,38 +54,57 @@ const Home = () => {
                         img="/assets/image3.png" 
                         alt="transparency" 
                         header="Transparency" 
-                        para="Leveraging Immutability feature of blockchain" />
-                </div>
-            </div>
+                        para=" All transactions (e.g., certificate issuance and verification) 
+                                are visible to authorized parties, but not manipulable. 
+                                This transparency builds trust." 
+                        hoverEffect={true} 
+                    />
+                    <Card 
+                        img="/assets/image.png" 
+                        alt="Card Image ilustrating encryption" 
+                        header="Encryption" 
+                        para="Blockchain employs advanced cryptographic techniques to 
+                                secure data, making it highly resistant to hacking 
+                                and fraud." 
+                        hoverEffect={true} 
+                    />
 
+                </div>
+            </div> {/* End of why blockchain page */}
+
+            {/* how ETHcertify works page */}
             <div className="how-it-works">
                 <h1 className="header-center"> How it Works </h1>
                 <div className="cards">
                     <Card 
-                        img=""
                         header="Issuance"
                         para="Institutions or authorized organizations create and issue 
                             digital certificates that are linked to blockchain records. 
                             Each certificate is assigned a unique identifier, ensuring
-                            its authenticity."/>
+                            its authenticity."
+                    />
+
                     <Card 
-                        img=""
                         header="Verification"
                         para="Employers or any individual can instantly verify a certificate's 
                         authenticity by searching for the certificate ID. The platform cross 
                         references the information with the blockchain to ensure the certificate 
-                        has not been altered or falsified."/>
+                        has not been altered or falsified."
+                    />
+
                     <Card 
-                        img=""
                         header="Transparency"
                         para="All actions (issuance and verification) are recorded on the blockchain, 
-                        providing a transparent and immutable record that can be accessed by anyone authorized."/>
+                        providing a transparent and immutable record that can be accessed by anyone authorized."
+                    />
+
                     <Card 
-                        img=""
                         header="Security"
                         para="ETHcertify ensures the highest level of security by using blockchains 
                         decentralized nature, making it virtually impossible to alter or forge certificates. 
-                        Once recorded, the information remains unchanged, ensuring trust and reliability."/>
+                        Once recorded, the information remains unchanged, ensuring trust and reliability."
+                    />
+
                 </div>
             </div>
 

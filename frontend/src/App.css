@@ -211,26 +211,70 @@
   font-size: 3.5rem;
 }
 
+/* Base Card Styles */
 .cards {
   padding: 5% 3%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-content: center;
 }
-
 .card {
-  border: 1px inset;
-  border-radius: 15px;
-  padding: 2%;
-  width: 300px;
+  width: 250px;
+  padding: 16px 5px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(117, 116, 116, 0.2);
   text-align: center;
-  line-height: 1.5;
+  transition: transform 0.3s ease-in-out;
 }
 
-.card img {
-  width: 200px;
-  height: 200px;
+.card:hover {
+  transform: scale(1.05);
 }
+
+/* Styles for Hover Effect Cards */
+.hover-card {
+  position: relative;
+  overflow: hidden;
+  padding:10px 5px;
+  width: 250px; /* Adjust as needed */
+  height: 300px; /* Adjust as needed */
+}
+
+.card-img {
+  width: 250px;
+  height: 400px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hover-card:hover .card-img {
+  opacity: 0;
+}
+
+.hover-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  padding: 10px 5px;
+}
+
+.hover-card:hover .hover-content {
+  opacity: 1;
+}
+
 
 .how-it-works {
   background-color: #09090A;
@@ -242,6 +286,126 @@
   width: 250px;
 }
 
+
+.why-us {
+  background-color: #09090A;
+  padding: 5% 7%;
+  color: white;
+}
+
+.section-one {
+  padding: 5% 3%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.text-area{
+  width: 50%;
+  text-align: left;
+}
+
+.image-area {
+  width:300px;
+  height:300px;
+  align-content: right;
+}
+.section-two {
+  padding: 5% 3%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+
+}
+.section-three {
+  padding: 5% 3%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+
+
+.gradient-container {
+  position: relative;
+  width: 100vw;
+  height: 500px;
+  background-color: black; /* Base background */
+  overflow: hidden;
+}
+
+.gradient1 {
+  position: absolute;
+  width: 45%; 
+  height: 450px;
+  border-radius: 50%;
+  background: linear-gradient(90deg , #a83369 ,#033157);
+  filter: blur(100px);
+  top: -50px;
+  left: -50px;
+  opacity: 60%;
+}
+
+
+.gradient2 {
+  position: absolute;
+  width: 45%; 
+  height: 450px;
+  border-radius: 50%;
+  background: linear-gradient(90deg ,#033157, #a83369);
+  filter: blur(100px);
+  bottom: -50px;
+  right: -50px;
+  opacity: 60%;
+}
+
+
+.cta-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px; 
+  text-align: center;
+}
+
+.cta-content {
+  display: flex;
+  flex-direction: column; /* Stacks the button and link vertically */
+  align-items: center;    /* Centers the button and link horizontally */
+  padding: 20px;
+}
+
+.cta-text {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: white;
+  font-weight: bold;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  background:linear-gradient(45deg, #033157, #A83369, #5B2B64);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.cta-button:hover {
+  opacity: 85%;
+}
+
+.cta-link {
+  color: #00baff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.cta-link:hover {
+  text-decoration: underline;
+}
 
 
 /*Home Style Ended*/

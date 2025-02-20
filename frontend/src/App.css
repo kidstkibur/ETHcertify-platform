@@ -43,6 +43,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #d0d0d0;
 }
 
 /* Header Container */
@@ -58,7 +59,6 @@
 .container {
   display: flex;
   justify-content: space-between;
-/*  align-items: center;*/
   width: 100%;
   max-width: 1200px;
 }
@@ -109,17 +109,12 @@
 /* Home Container */
 .home-container {
   display: flex;
-  background-color: #09090A; /* Background Color */
-  color: white;
+  background-color: #09090A; /*  Background Color */
+  background: radial-gradient(circle at 76% 50%, #5B2B64, #09090A 25%);
   padding: 2% 7%;
   padding-bottom: 7%;
   justify-content: space-between;
   align-items: center;
-}
-
-/* Content Section */
-.content {
-  max-width: 50%; /* Adjust width as needed */
 }
 
 /* Header Text with Gradient */
@@ -142,7 +137,6 @@
   font-size: 1.2rem;
   line-height: 1.8;
   margin-bottom: 3rem;
-  color: whitesmoke; /* Lighter text color #5D94BD */
 }
 
 /* Button Group */
@@ -160,7 +154,6 @@
   border-radius: 13px;
   cursor: pointer;
   transition: transform 0.3s ease;
-  color: white;
   text-transform: uppercase;
 }
 
@@ -201,7 +194,6 @@
 .why-blockchain {
   background-color: #09090A;
   padding: 5% 7%;
-  color: white;
 }
 
 .header-center {
@@ -217,17 +209,32 @@
 }
 
 .card {
-  border: 1px inset;
+/*  border: 1px solid;*/
   border-radius: 15px;
   padding: 2%;
   width: 300px;
   text-align: center;
-  line-height: 1.5;
+  line-height: 1.8;
 }
 
-.why-blockchain .card {
-/*  background: linear-gradient(90deg, #0c8ce9, #7cc4f8);*/
-/*  background-color: #7cc4f8;*/
+.card .hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.card:hover .hidden {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card {
+  background-color: rgba(60, 7, 83, 0.2);
 }
 
 .card img {
@@ -237,7 +244,6 @@
 .how-it-works {
   background-color: #09090A;
   padding: 5% 7%;
-  color: white;
 }
 
 .how-it-works .card {
@@ -247,7 +253,6 @@
 .why-eth {
   background-color: #09090A;
   padding: 1% 10%;
-  color: white;
 }
 
 .why {
@@ -255,10 +260,19 @@
   display: flex;
   align-items: center;
   gap: 2rem;
+  border-radius: 40px;
+}
+
+.first, .third {
+  background: radial-gradient(circle at 80% 50%, #5B2B64, #09090A 35%);
+}
+
+.second {
+  background: radial-gradient(circle at 16% 50%, #5B2B64, #09090A 30%);
 }
 
 .why img {
-  width: 70%;
+  width: 90%;
   text-align: center;
 }
 
@@ -276,13 +290,12 @@
 
 /* Footer Style */
 .footer {
-  background-color: #0F0F2F;
+  background-color: #09090A;
   padding: 1% 10%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-size: 1.2rem;
-  color: white;
 }
 
 .copywrite {

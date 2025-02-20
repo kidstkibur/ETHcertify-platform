@@ -7,7 +7,7 @@ const Card = (props) => {
 			{/* conditonal rendering to make it usable*/}
 			{ props.img !== "" && <img src={ props.img } alt={ props.alt } /> } 
 			<h2> { props.header } </h2>
-			<p> { props.para } </p>
+			{ props.img !== "" ? <p className="hidden"> { props.para } </p> : <p> { props.para } </p> }
 		</div>
 	);
 };

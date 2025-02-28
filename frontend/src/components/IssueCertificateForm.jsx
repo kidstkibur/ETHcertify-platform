@@ -9,6 +9,28 @@ const IssueCertificateForm = () => {
   const [institutionName, setInstitutionName] = useState("");
   const [file, setFile] = useState(null);
   const [status, setStatus] = useState("");
+  const [dragActive, setDragActive] = useState(false);
+
+  const handleDragOver = (e) => {
+    e.preventDefault();
+    setDragActive(true);
+  };
+
+  const handleDragLeave = () => {
+    setDragActive(false);
+  };
+
+  const handleDrop = (e) => {
+    e.preventDefault();
+    setDragActive(false);
+    if (e.dataTransfer.files.length) {
+      setFile(e.dataTransfer.files[0]);
+    }
+  };
+
+  const handleFileChange = (e) => {
+    setFile(e.target.files[0]);
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -22,10 +44,9 @@ const IssueCertificateForm = () => {
       if (!signer) return;
 
       const fileContent = await readFileAsText(file);
-      const hash = generateHash(fileContent); // Generate Keccak-256 hash on the client-side
-
+      const hash = generateHash(fileContent);
       const contract = getContract(signer);
-      const tx = await contract.issueCertificate(studentName, institutionName, hash); // Pass the hash to the contract
+      const tx = await contract.issueCertificate(studentName, institutionName, hash);
       await tx.wait();
       setStatus("Certificate issued successfully!");
     } catch (error) {
@@ -35,7 +56,7 @@ const IssueCertificateForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="issue-form">
       <h2>Issue Certificate</h2>
       <input
         type="text"
@@ -49,10 +70,16 @@ const IssueCertificateForm = () => {
         value={institutionName}
         onChange={(e) => setInstitutionName(e.target.value)}
       />
-      <input
-        type="file"
-        onChange={(e) => setFile(e.target.files[0])}
-      />
+      <div 
+        className={`file-drop-zone ${dragActive ? "active" : ""}`} 
+        onDragOver={handleDragOver} 
+        onDragLeave={handleDragLeave} 
+        onDrop={handleDrop}
+      >
+        <p>Drag & drop a file here or click to upload</p>
+        <input type="file" onChange={handleFileChange} />
+      </div>
+      {file && <p>Selected file: {file.name}</p>}
       <button type="submit">Issue Certificate</button>
       {status && <p>{status}</p>}
     </form>

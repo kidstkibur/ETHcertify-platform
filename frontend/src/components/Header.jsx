@@ -17,12 +17,12 @@ const Header = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a href="#verify" className="nav-link">
+              <a href="/validate" className="nav-link">
                 Verify
               </a>
             </li>
             <li className="nav-item">
-              <a href="#issue" className="nav-link">
+              <a href="/issue" className="nav-link">
                 Issue
               </a>
             </li>

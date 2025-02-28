@@ -1,0 +1,123 @@
+/* Dark theme background */
+.validate-page {
+    background-color: #121212;
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Flexbox for layout */
+  .validation-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Left section: Search */
+  .search-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .search-section input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  /* Right section: Upload */
+  .upload-section {
+    flex: 1;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Bottom section: Certificate display */
+  .certificate-display {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    text-align: center;
+  }
+  /* Style the search bar container */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #1e1e1e;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+  }
+  
+  /* Style the input field */
+  .search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: none;
+    color: white;
+    outline: none;
+  }
+  
+  /* Style the search button */
+  .search-bar button {
+    background: #a83369;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+    color: white;
+  }
+  
+  .search-bar button:hover {
+    background: #5b2b64;
+  }
+
+  .drag-drop-area {
+    border: 2px dashed #5d94bd;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: white;
+    min-height: 150px;
+  }
+  .validate-button{
+    padding: 10px 6px;
+    font-weight: 400;
+    border-radius: 13px;
+    border: 1px inset;
+    border-color: #a83369;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background: linear-gradient(90deg, #A83369, #5B2B64);
+  }
+  .validate-button:hover{
+    transform: scale(1.05);
+  }
+  
+  .file-preview {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #1e1e1e;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .file-preview img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .file-preview iframe {
+    border: none;
+  }
+  
+  

@@ -11,8 +11,7 @@ const ValidatePage = () => {
       <Header />
       <h1>Certificate Validation</h1>
 
-      <div className="validation-container">
-        {/* Left: Search Section */}
+      {/* <div className="validation-container">
         <div className="search-section">
           <div className="search-bar">
             <input type="text" placeholder="Enter Certificate ID or Hash" />
@@ -22,11 +21,11 @@ const ValidatePage = () => {
           </div>
         </div>
 
-        {/* Right: Upload Section */}
         <div className="upload-section">
           <ValidateCertificateForm />
         </div>
-      </div>
+      </div> */}
+      <ValidateCertificateForm />
 
       {/* Bottom: Certificate Display */}
       <div className="certificate-display">

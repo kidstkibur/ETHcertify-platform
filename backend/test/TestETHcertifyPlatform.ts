@@ -141,10 +141,10 @@ async function validateCertificate(certId: string) {
     await validateCertificate(certHash);
     console.log("✅ Process completed successfully.");
 
-    // const allCertificates = await certificateContract.methods
-    //   .getAllCertificates()
-    //   .call();
-    // console.log(allCertificates);
+    const allCertificates = await certificateContract.methods
+      .getAllCertificates()
+      .call();
+    console.log(allCertificates);
   } catch (error: any) {
     console.error("❌ Unexpected error in main execution:", error.message);
   }

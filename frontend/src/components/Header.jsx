@@ -1,10 +1,13 @@
 import React from "react";
+import WalletCard from '../pages/WalletCard';
 import "../App.css"; // Import CSS for styling
 
 const Header = () => {
   return (
     <header className="header">
       <div className="container">
+         {/* Move WalletCard here to align it to the left */}
+        
         <div className="logo">
           <img src="../assets/image6.png" alt="ETHcertify Logo" />
         </div>
@@ -32,9 +35,10 @@ const Header = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a href="#contract" className="nav-link">
+              <a href="#contact" className="nav-link">
                 Contact
               </a>
+              <WalletCard />
             </li>
           </ul>
         </nav>
